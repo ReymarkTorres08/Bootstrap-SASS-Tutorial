@@ -1,0 +1,12 @@
+/* Buttons */
+.btn-primary {
+	@include add-background($primary-color);
+	@include add-border(2px, #ffffff, all);
+}
+
+.btn-primary:hover {
+	/* lighten() is a SASS class */
+	background: none;
+	@include add-border(2px, $primary-color, all);
+	color: $primary-color;;
+}
